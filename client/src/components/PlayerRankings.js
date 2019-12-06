@@ -1,9 +1,16 @@
 import React from "react";
 import PlayerInfo from "./PlayerInfo";
+import styled from "styled-components";
+
+const PlayersDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 function PlayerRankings(props) {
   return (
-    <div>
+    <PlayersDiv>
       {props.players.map(player => (
         <PlayerInfo
           key={player.id}
@@ -13,8 +20,7 @@ function PlayerRankings(props) {
           searches={player.searches}
         />
       ))}
-      <p>mapping over data here to display player info</p>
-    </div>
+    </PlayersDiv>
   );
 }
 
