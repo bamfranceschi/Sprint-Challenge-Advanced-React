@@ -33,7 +33,7 @@
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: lightgray;
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -42,7 +42,7 @@
 }
 
 .toggle {
-  background: #f68819;
+  background: #313843;
   border-radius: 50px;
   height: 18px;
   left: 0;
